@@ -9,9 +9,9 @@
     (string-split string))))
 
 (define max-brightness-path
-  "/sys/class/backlight/mba6x_backlight/max_brightness")
+  "/sys/class/backlight/intel_backlight/max_brightness")
 (define brightness-path
-  "/sys/class/backlight/mba6x_backlight/brightness")
+  "/sys/class/backlight/intel_backlight/brightness")
 
 (define (brightness op)
   (let ((max-brightness (to-number (read-all max-brightness-path)))
