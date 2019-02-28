@@ -1,4 +1,4 @@
-#! /usr/bin/csi -script
+#! /usr/bin/chicken-csi -script
 (require-extension shell)
 (import (chicken file posix)
 	(chicken process-context)
